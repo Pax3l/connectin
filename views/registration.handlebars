@@ -1,0 +1,47 @@
+<div class="container-fluid registration-container">
+  <h1 class="text-center">Registration</h1>
+  <hr class="registration-hr">
+
+  <div class="row">
+    <form name="register", method="post", action="adduser">
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" class="form-control" id="username" placeholder="Username" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Password" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="confirmpassword">Confirm Password</label>
+          <input type="password" class="form-control" id="confirmpassword" placeholder="Confirm password" name="confirmpassword" required>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="firstname">First name</label>
+          <input type="text" class="form-control" id="firstname" placeholder="First name" name="firstname" required>
+        </div>
+        <div class="form-group">
+          <label for="lastname">Last name</label>
+          <input type="text" class="form-control" id="lastname" placeholder="Last name" name="lastname" required>
+        </div>
+        <div class="form-group">
+          <label for="birthday">Birthday</label>
+          <input type="date" class="form-control" id="birthday" name="birthday" required>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <button type="submit" class="btn btn-success">Submit</button>
+      </div>
+    </div>
+  </form>
+
+</div>

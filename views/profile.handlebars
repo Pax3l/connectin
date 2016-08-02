@@ -1,0 +1,89 @@
+
+<!--PROFILE PIC AND BIO-->
+<div class="container">
+ <div class="row">
+   <div class="col-sm-3 well text-center">
+       <p>My Profile</p>
+       <img src="/images/profile.jpg" class="img-thumbnail" height="130" width="130" alt="Avatar">
+       <br>
+       <br>
+       <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Edit Picture</button>
+ <!-- Modal -->
+ <div class="modal fade" id="myModal" role="dialog">
+   <div class="modal-dialog">
+
+     <!-- CHOOSE A PROFILE PIC-->
+     <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <h4 class="modal-title">Choose A Profile Picture</h4>
+       </div>
+
+<div id="emotion">
+   <input type="radio" name="profilepic" id="male" />
+       <label for="male"><img src="/images/whiteguy.jpg" alt="Male" width="304" height="236" /></label>
+
+   <input type="radio" name="profilepic" id="female" />
+       <label for="female"><img src="/images/womanimage.jpg" alt="Female" width="250" height="220" /></label>
+</div>
+
+
+
+
+       <!--div class="modal-body">
+          <img src="whiteguy.jpg" class="img-thumbnail" alt="Male" width="304" height="236">
+          <img src="womanimage.jpg" class="img-thumbnail" alt="Female" width="200" height="100">
+       </div-->
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+    </div>
+    </div>
+
+   </div>
+ </div>
+</div>
+
+
+
+   <div class="col-sm-7">
+   <div class="row">
+       <div class="col-sm-12">
+         <div class="panel panel-default text-left">
+           <div class="panel-body">
+             {{#each profileData}}
+             <p> Status: <br> {{status}}</p>
+             {{/each}}
+           </div>
+         </div>
+       </div>
+     </div>
+
+
+      <!--MY BIO-->
+      <div bio-class="col-sm-9">
+               <div class="well">
+               <h2> My Bio </h2>
+                <br>
+          {{#each profileData}}
+          <p><b>Email:</b> {{email}}</p>
+          <p><b>Name:</b> {{firstname}} {{lastname}}</p>
+          <p><b>Education:</b> {{education}}</p>
+          <p><b>Occupation:</b> {{occupation}}</p>
+          <p><b>Address:</b> {{address}}</p>
+          <p><b>Interests:</b> {{interests}}</p>
+          {{/each}}
+          </div>
+       </div>
+       <a type="button" class="btn btn-primary" href="/editprofile">Edit Information</a>
+       <br>
+       <br>
+     </div>
+<!--FRIEND BAR-->
+<div class="col-sm-2 well text-center">
+     <div friend-class="thumbnail">
+       <h2>My Friends</h2>
+       <button class="btn btn-success">Remove Friends</button>
+     </div>
+</div>
+</div>
+</div>

@@ -1,0 +1,28 @@
+<div class="container-fluid login-container">
+  {{#if wrongLogin}}
+      <div class="alert alert-danger" id="login-error">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      Wrong email or password. Please try again.
+    </div>
+  {{/if}}
+  <h1 class="text-center">Log in</h1>
+  <hr class="login-hr">
+  <form name="login" action="checklogin" method="post"> <!-- must be profile so we link to profile -->
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" required>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Log in</button>
+  </form>
+  <br>
+  <p class="text-center">
+    <a href="/registration">Don't have an account? Click here.</a>
+  </p>
+</div>
