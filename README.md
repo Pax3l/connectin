@@ -1,6 +1,6 @@
 # ConnectIn
 
-Project with a simple login system, where users can insert data into the database and the information stored in the database can be displayed on the website.
+This is a project for a summer course, created by Eleni and Kristel. The website has a simple login system, where users can insert data into the database, and the information stored in the database can be displayed on the website.
 
 Uses Node.js, Express, MongoDB and Handlebars.
 
